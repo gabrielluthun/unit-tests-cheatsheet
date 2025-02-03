@@ -23,3 +23,6 @@ Ni plus, ni moins.
 - **System Under Test (SUT)** : représente la partie du code que l'on veut **tester**. *(classe, méthode, ensemble de classes...)*
 - **Test Runner** : outil qui permet d'exécuter les tests.
 - **Assertions** : vérifications de sécurité que l'on souhaite faire sur le SUT.
+- **Mock** : objet simulant le comportement d'un objet réel.
+- **Stub** : remplacement d'une interface par un objet simulant le comportement d'un objet réel. (exemple : simuler un paiement réussi)
+- **Spies** : observateur enregistrant des appels de fonctions sans modifier leur comportement.
