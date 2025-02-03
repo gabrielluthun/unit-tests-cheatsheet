@@ -17,6 +17,9 @@ Ni plus, ni moins.
 - **Réduction des coûts** : effet boule de neige de la réduction des erreurs.
 
 ## 2. Découverte du vocabulaire des tests
-- Test Fixture : morceau de code qui permet de configurer un test. Permet de réutiliser le même jeu de données pour plusieurs tests.
-- Test Suite : **ensemble** de tests.
-- Test Case : **un** test unitaire.
+- **Test Fixture** : morceau de code qui permet de **configurer** un test, ce qui permet de réutiliser le **même** jeu de données pour **plusieurs** tests.
+- **Test Suite** : **ensemble** de tests.
+- **Test Case** : **un** test unitaire.
+- **System Under Test (SUT)** : représente la partie du code que l'on veut **tester**. *(classe, méthode, ensemble de classes...)*
+- **Test Runner** : outil qui permet d'exécuter les tests.
+- **Assertions** : vérifications de sécurité que l'on souhaite faire sur le SUT.
