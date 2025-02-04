@@ -19,7 +19,7 @@ Ni plus, ni moins.
 - **Réduction des erreurs** : ces tests permettent de détecter les erreurs avant que celles-ci ne soient commises.
 - **Réduction des coûts** : effet boule de neige de la réduction des erreurs.
 
-## 1.3 Découverte du vocabulaire des tests
+## 1.3 Vocabulaire des tests
 - **Test Fixture** : morceau de code qui permet de **configurer** un test, ce qui permet de réutiliser le **même** jeu de données pour **plusieurs** tests.
 - **Test Suite** : **ensemble** de tests.
 - **Test Case** : **un** test unitaire.
