@@ -77,4 +77,42 @@ Cas d'usage :
 
 ---
 
+## 3. Les bonnes pratiques des tests
+### 3.1 Convention de nommage
+Améliore la lisibilité et la compréhension des tests
 
+Un **nom** doit **décrire** :
+- Méthode **testée**
+- L'état / Scénario **testé**
+- Comportement **attendu**
+
+Exemple en Java :
+```java
+@Test
+public void IsPrime_WhenNumberIsPrime_ReturnsTrue() {
+    // ...
+}
+```
+
+-> Permet de savoir rapidement l'objectif du test
+
+### 3.2 Structure des tests : Arrange, Act, Assert (AAA)
+Modèle **AAA** : Organisation de Tests
+
+**A**rrange : Préparez les objets nécessaires au test
+**A**ct : Exécutez le test
+**A**ssert : Vérifiez le résultat
+
+Exemple en C# :
+```csharp
+// Arrange
+var primeUtils = new PrimeUtils();
+int number = 5;
+bool expected = true;
+
+// Act
+var actual = primeUtils.IsPrime(number);
+
+// Assert
+Assert.Equal(expected, actual);
+```
