@@ -122,14 +122,23 @@ Assert.Equal(expected, actual);
 - Utiliser des **mocks** pour simuler les dépendances externes
 - **Isoler** les tests pour éviter les **effets de bord** et qu'ils soient **indépendants**
 
-### 3.4 Éviter la complexité 
+### 3.4 Couverture de code
 
-- Les tests doivent être **simples** et **concentrés** sur **une seule** fonctionnalité
-- Éviter des structures complexes comme des **boucles** ou des **conditions** 
-- Si plusieurs cas à tester, utiliser des données en `InlineData` (donnés en ligne)
+- **Couverture de code** = mesure de la quantité de code testé par rapport au code total
+- **Objectif** = s'en fixer un **réaliste** (80-90%), ne pas chercher à atteindre 100%
+- **Couverture de test** = mesure de la quantité 
+#### Outils de couverture de code
 
-### 3.5 Éviter les magics numbers
+- **JaCoCo** : outil de couverture de code pour Java
+- **Cobertura** : outil de couverture de code pour Java
+- **NCover** : outil de couverture de code pour .NET
+- **Istanbul** : outil de couverture de code pour JavaScript
 
-- Utiliser des **constantes** pour les valeurs critiques
-- Si nécessaire, utiliser des **commentaires** pour expliquer ces constantes
+### 3.5 Documentation des tests
 
+- Essentielle pour faciliter la compréhension des tests
+#### Bonnes pratiques de documentation de tests
+- **Nommage** : suivre les conventions de nommage comme indiqué [ici](#31-convention-de-nommage)
+- **Commentaires** : ajouter des commentaires  pertinents pour expliquer les tests complexes, ou si l'objectif n'est pas clair
+- **Rapports automatisés** : Utiliser des outils de rapports pour faciliter la compréhension des tests (Allure, JUnit, SonarQube, etc.)
+- **Centraliser la documentation** : placer la documentation dans un fichier séparé ou un dossier (README.md, etc.)
