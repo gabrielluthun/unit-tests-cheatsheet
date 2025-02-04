@@ -116,3 +116,20 @@ var actual = primeUtils.IsPrime(number);
 // Assert
 Assert.Equal(expected, actual);
 ```
+
+### 3.3 Tests isolés et indépendants
+
+- Utiliser des **mocks** pour simuler les dépendances externes
+- **Isoler** les tests pour éviter les **effets de bord** et qu'ils soient **indépendants**
+
+### 3.4 Éviter la complexité 
+
+- Les tests doivent être **simples** et **concentrés** sur **une seule** fonctionnalité
+- Éviter des structures complexes comme des **boucles** ou des **conditions** 
+- Si plusieurs cas à tester, utiliser des données en `InlineData` (donnés en ligne)
+
+### 3.5 Éviter les magics numbers
+
+- Utiliser des **constantes** pour les valeurs critiques
+- Si nécessaire, utiliser des **commentaires** pour expliquer ces constantes
+
