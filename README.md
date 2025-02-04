@@ -52,7 +52,7 @@ Cas d'usage :
 - **Favoriser** un code modulaire et propre
 
 ### 2.3 Les tests d'intégration
-Tests **d'intégration** = vérifient la **communication** entre les unités. 
+Tests **d'intégration** = vérifient la **communication** entre les unités.    
 Implique plusieurs modules / composants.
 
 Cas d'usage :
@@ -62,7 +62,7 @@ Cas d'usage :
 
 
 ### 2.4 Les tests E2E (End-to-End)
-Tests **E2E** = tests qui simulent le système dans son ensemble
+Tests **E2E** = tests qui simulent le système dans son ensemble    
 Vise à valider que toutes les parties du système fonctionnent ensemble, depuis l'interface utilisateur jusqu'aux bases de données (et autres services)
 
 Cas d'usage : 
