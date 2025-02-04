@@ -33,15 +33,48 @@ Ni plus, ni moins.
 ---
 
 ## 2. Les types de tests
+### 2.1 Principes FIRST
+**Fast (Rapide)** : les tests doivent être rapides à exécuter (quelques millisecondes)
+- **Isolated (Isolé)** : chaque test doit être indépendant
+- **Repeatable (Répétable)** : les tests doivent être constants, quel que soit l'environnement
+- **Self-validating (Auto-validant)** : les tests doivent valider leur succès ou leur échec sans intervention humaine
+- **Timely (Opportun)** : les tests doivent être écrits en parallèle ou juste après le développement du code testé
 
-### 2.1 Les tests unitaires
-Tests unitaires = tests qui vérifient le **comportement** d'une **unité** de code.
+### 2.2 Les tests unitaires
+Tests **unitaires** = tests qui vérifient le **comportement** d'une **unité** de code.
 
 **Objectifs** : garantir que **chaque unité** de code fonctionne comme prévu
 
-**Principes FIRST** :
-- **Fast** : les tests doivent être rapides à exécuter (quelques millisecondes)
-- **Isolated** : chaque test doit être indépendant
-- **Repeatable** : les tests doivent être constants, quel que soit l'environnement
-- **Self-validating** : les tests doivent valider leur succès ou leur échec sans intervention humaine
-- **Timely** : les tests doivent être **opportun**, càd écrits en parallèle ou juste après le développement du code testé
+
+Cas d'usage : 
+- **Valider** les fonctions critiques
+- **Identifier** les régressions lors de modifications 
+- **Favoriser** un code modulaire et propre
+
+### 2.3 Les tests d'intégration
+Tests **d'intégration** = vérifient la **communication** entre les unités. 
+Implique plusieurs modules / composants.
+
+Cas d'usage :
+- **Valider** les fonctions critiques
+- **Identifier** les régressions lors de modifications 
+- **Favoriser** un code modulaire et propre
+
+
+### 2.4 Les tests E2E (End-to-End)
+Tests **E2E** = tests qui simulent le système dans son ensemble
+Vise à valider que toutes les parties du système fonctionnent ensemble, depuis l'interface utilisateur jusqu'aux bases de données (et autres services)
+
+Cas d'usage : 
+- Tester un parcours utilisateur complet, un peu comme un achat en ligne
+- Valider l'expérience utilisateur sur différents navigateurs/appareils
+- Garantit la cohérence fonctionelle, notamment après des MàJ majeures
+
+### 2.5 Les 3 tests en résumé
+- **Unitaires** : vérifient le comportement d'une unité de code et garantissent la fiabilité des composants
+- **D'intégration** : assurent le bon fonctionnement des interactions entre modules/composants
+- **E2E** : vérifient le système du point de vue utilisateur
+
+---
+
+
