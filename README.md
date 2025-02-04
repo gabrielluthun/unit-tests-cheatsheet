@@ -3,6 +3,7 @@
 ## Table des matières
 - [1. Introduction](#1-introduction)
 - [2. Les types de tests](#2-les-types-de-tests)
+- [3. Les bonnes pratiques des tests](#3-les-bonnes-pratiques-des-tests)
 
 ---
 
